@@ -1,5 +1,8 @@
 #Extracting transcript IDs and gene names from transcriptome fasta
-#Script requires call for python, the name of script, and the inout fasta file
+#Script requires call for python, the name of script, and the input fasta file
+
+#After obtaining the off.txt file, it will need to be opened in a text editor to run a find and replace command for the square brackets and single quotation marks.
+#This work around should be fixed in the future
 
 import os
 import sys
