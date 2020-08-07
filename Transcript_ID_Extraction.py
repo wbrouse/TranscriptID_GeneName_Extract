@@ -36,7 +36,7 @@ with open("Headers_only.fa" , "r") as Headers:			#create the off.txt outfile tha
 
 from collections import OrderedDict
 
-with open('dupoff.txt', 'r') as dupoff:
+with open('dupoff.txt', 'r') as dupoff:				#creates the column of unique gene names but doesn't remove the square brackets or single quotation mstkd
 	lines = (line.rstrip() for line in dupoff)
 	unique_lines = OrderedDict.fromkeys((line for line in lines if line))
 	out = open('off.txt' ,'w')
